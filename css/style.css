@@ -927,6 +927,7 @@ nav{
 }
 
 .about-imageContent2 {
+    max-width: 100%;
     position: relative;
     height: 450px;
     margin: 0 10px;
