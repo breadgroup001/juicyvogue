@@ -29,7 +29,7 @@ const BASE_ID = 'appqLhT06HpZl1m5a';
 const PRODUCTS_TABLE = 'Catalog'; 
 const ORDERS_TABLE = 'Orders'; 
 
-const PAYSTACK_PUBLIC_KEY = 'pk_test_bc588b25fbd7600b8ddf7b392b1835b6fe3aabf0'; 
+const PAYSTACK_PUBLIC_KEY = 'pk_live_64e2c87f59931d03706f8f41e8dca0ffdea7faf7'; 
 
 const AIRTABLE_URL = `https://api.airtable.com/v0/${BASE_ID}/${PRODUCTS_TABLE}`;
 const AIRTABLE_ORDERS_URL = `https://api.airtable.com/v0/${BASE_ID}/${ORDERS_TABLE}`;
