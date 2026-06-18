@@ -189,7 +189,7 @@ nav{
 /* --- Hero Section --- */
 .hero {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +230,6 @@ nav{
 }
 
 .back-vid{
-    margin-top: 70px;
     position: absolute;
     right: 0;
     bottom: 0;
