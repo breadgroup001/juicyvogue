@@ -693,7 +693,7 @@ nav{
 }
 @media (max-width: 767px) {
     .cart-drawer {
-        width: 35vh;
+        width: 40vh;
     }
 }
 
