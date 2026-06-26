@@ -600,7 +600,7 @@ nav{
 }
 @media (max-width: 767px) {
     .cart-drawer {
-        width: 450px;
+        width: 400px;
     }
 }
 
