@@ -553,7 +553,7 @@ nav.scrolled{
 }
 @media (max-width: 767px) {
     .cart-drawer {
-        width: 43vh;
+        width: 450px;
     }
 }
 
