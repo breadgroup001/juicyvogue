@@ -1597,6 +1597,7 @@ hr {
 
 /* ---------- COMING SOON STAMP ---------- */
 .soon{
+    align-items: center;
     padding:80px 0;
     margin: 10px 0 0 0;
     background: linear-gradient(135deg, rgb(40, 13, 13), rgb(40, 13, 13), rgb(40, 13, 13));
