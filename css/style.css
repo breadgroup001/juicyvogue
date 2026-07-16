@@ -775,6 +775,7 @@ nav.scrolled{
 
 .countdown {
     text-align: center;
+    align-items: center;
     margin: 50px 0;
     padding: 0;
     display: block;
