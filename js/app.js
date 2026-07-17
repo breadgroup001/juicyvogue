@@ -43,6 +43,31 @@ body.addEventListener("click", e => {
   tick();
   setInterval(tick, 1000);
 
+
+  // --- 1. INTERSECTION OBSERVER FOR SCROLL REVEAL ---
+  const revealElements = document.querySelectorAll('.reveal-fade-up, .reveal-fade-in, .reveal-scale');
+
+  const observerOptions = {
+    root: null, // uses viewport
+    rootMargin: "0px",
+    threshold: 0.15 // Triggers when 15% of the element is visible
+  };
+
+  const revealOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        // Once animated, we can stop observing this element
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(element => {
+    revealOnScroll.observe(element);
+  });
+
+
 // ==========================================
 //        AIRTABLE CONFIGURATION
 // ==========================================
