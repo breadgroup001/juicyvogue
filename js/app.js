@@ -12,7 +12,7 @@ const body = document.querySelector("body"),
   // Nav scroll state
  
   window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
+    nav.classList.toggle('scrolled', window.scrollY > 50);
   });
 
 
@@ -44,8 +44,12 @@ body.addEventListener("click", e => {
   setInterval(tick, 1000);
 
 
+
+
+
+  
   // --- 1. INTERSECTION OBSERVER FOR SCROLL REVEAL ---
-  const revealElements = document.querySelectorAll('.reveal-fade-up, .reveal-fade-in, .reveal-scale');
+  const revealElements = document.querySelectorAll('.reveal-fade-up, .reveal-fade-up2, .reveal-fade-in, .reveal-scale');
 
   const observerOptions = {
     root: null, // uses viewport
@@ -66,6 +70,7 @@ body.addEventListener("click", e => {
   revealElements.forEach(element => {
     revealOnScroll.observe(element);
   });
+
 
 
 // ==========================================
@@ -185,10 +190,10 @@ function renderShopGrid() {
         let badgeHtml = '';
         if (fields.badge_type) {
             const cleanBadge = fields.badge_type.trim().toLowerCase();
-            if (cleanBadge === 'new') {
-                badgeHtml = `<span class="product-badge badge-new">New</span>`;
-            } else if (cleanBadge === 'discount') {
-                badgeHtml = `<span class="product-badge badge-discount">Price Slash</span>`;
+            if (cleanBadge === 'limited') {
+                badgeHtml = `<span class="product-badge badge-limited pulsate-bck">Limited Edition</span>`;
+            } else if (cleanBadge === 'new') {
+                badgeHtml = `<span class="product-badge badge-new pulsate-bck">New Collection</span>`;
             }
             
         }
