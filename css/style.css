@@ -1603,7 +1603,6 @@ hr {
 
 /* ---------- COMING SOON STAMP ---------- */
 .soon{
-    align-items: center;
     padding:80px 0;
     margin: 10px 0 0 0;
     background: linear-gradient(135deg, rgb(40, 13, 13), rgb(40, 13, 13), rgb(40, 13, 13));
@@ -1616,43 +1615,10 @@ hr {
     background: repeating-linear-gradient(45deg, rgba(245,242,236,0.03) 0 1px, transparent 2px 26px);
 }
 .soon-inner{ position:relative; z-index:1; max-width:720px; }
-.soon .eyebrow { 
-    color: #c9a24b; 
-    display:block; 
-    margin-bottom:18px;
-    font-family:'JetBrains Mono', monospace;
-    text-transform:uppercase;
-    font-size:15px;
-    letter-spacing:0.18em;
-    font-weight:500;
-}
+.soon .eyebrow{ color: #c9a24b; display:block; margin-bottom:18px; }
 .soon h2{ color: white; font-family: 'Anton', sans-serif; text-transform:uppercase; font-size:clamp(34px,5.5vw,68px); margin-bottom:20px; }
 .soon p{ color: rgba(245,242,236,0.68); max-width:44ch; margin:0 auto 44px; }
-
-
-
-.countdown { 
-    display:flex; 
-    gap:14px; 
-    justify-content:center; 
-    flex-wrap:wrap; 
-
-    text-align: center;
-    align-items: center;
-    margin: 50px 0;
-    padding: 0;
-    padding-inline-start: 40px;
-    list-style-type: disc;
-    box-sizing: border-box;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    unicode-bidi: isolate;
-}
-
-
-
-
-
+.countdown{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
 .countdown .cell{
     border:1px solid rgba(245,242,236,0.14); padding:20px 22px; min-width:92px; border-radius:2px;
     background:rgba(245,242,236,0.03);
