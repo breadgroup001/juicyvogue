@@ -309,10 +309,11 @@ nav.scrolled{
 }
 
 .card-image-wrap {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.5;
     background-color: #f9fafb;
     border-bottom: 1px solid #f3f4f6;
     overflow: hidden;
+
 
 
     position: relative;
@@ -412,7 +413,7 @@ nav.scrolled{
     background-color: #f9fafb;
     border-radius: 1rem;
     border: 1px solid #f3f4f6;
-    overflow: hidden;
+    
 }
 
 .main-featured-image img {
@@ -772,6 +773,8 @@ nav.scrolled{
     z-index: 2;
 }
 
+
+
 .countdown span {
     font-size: 25px;
 }
@@ -1047,7 +1050,6 @@ nav.scrolled{
 
 .rower {
     display: flex;
-    align-items: center;
     justify-content: space-around;
 
 }
@@ -1583,6 +1585,7 @@ hr {
 
 /* ---------- COMING SOON STAMP ---------- */
 .soon{
+    align-items: center;
     padding:80px 0;
     margin: 10px 0 0 0;
     background: linear-gradient(135deg, rgb(40, 13, 13), rgb(40, 13, 13), rgb(40, 13, 13));
@@ -1598,7 +1601,30 @@ hr {
 .soon .eyebrow{ color: #c9a24b; display:block; margin-bottom:18px; }
 .soon h2{ color: white; font-family: 'Anton', sans-serif; text-transform:uppercase; font-size:clamp(34px,5.5vw,68px); margin-bottom:20px; }
 .soon p{ color: rgba(245,242,236,0.68); max-width:44ch; margin:0 auto 44px; }
-.countdown{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+
+.countdown { 
+    display:flex; 
+    gap:14px; 
+    justify-content:center; 
+    flex-wrap:wrap; 
+
+    text-align: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0;
+    padding-inline-start: 40px;
+    list-style-type: disc;
+    box-sizing: border-box;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    unicode-bidi: isolate;
+}
+
+
+
+
+
 .countdown .cell{
     border:1px solid rgba(245,242,236,0.14); padding:20px 22px; min-width:92px; border-radius:2px;
     background:rgba(245,242,236,0.03);
@@ -1716,9 +1742,9 @@ hr {
     top: 0.75rem;
     left: 0.75rem;
     padding: 0.35rem 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 0.75rem;
-    font-weight: 700;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: #ffffff;
@@ -1731,11 +1757,14 @@ hr {
 }
 .product-badge.badge-discount {
     background-color: rgb(40, 13, 13);
+}
 
 
 
 
-    /* --- SCROLL ANIMATION BASE STYLES --- */
+
+
+/* --- SCROLL ANIMATION BASE STYLES --- */
 
 /* 1. Fade Up Effect (Perfect for text and sections) */
 .reveal-fade-up {
@@ -2131,5 +2160,4 @@ hr {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
-}
 }
