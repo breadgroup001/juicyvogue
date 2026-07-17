@@ -409,10 +409,11 @@ nav.scrolled{
 }
 
 .main-featured-image {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.5;
     background-color: #f9fafb;
     border-radius: 1rem;
     border: 1px solid #f3f4f6;
+	overflow: hidden;
     
 }
 
