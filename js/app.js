@@ -76,9 +76,9 @@ body.addEventListener("click", e => {
 // ==========================================
 //        AIRTABLE CONFIGURATION
 // ==========================================
-const AIRTABLE_TOKEN = 'patCP9WW5QHro9aJo.35d1e9e487e956f3017cc9f0fd52a12ca62345d5aeb58239da55770227009a31';
-const BASE_ID = 'appqLhT06HpZl1m5a';
-const PRODUCTS_TABLE = 'Catalog'; 
+const AIRTABLE_TOKEN = 'pat97K4sOmBaxTltT.aa097395c3c8185b08b1a676ae38dcf609ed2d6f3eac071105aedf451b2434b8';
+const BASE_ID = 'appaZEi2LhzSSYLbt';
+const PRODUCTS_TABLE = 'Shop'; 
 const ORDERS_TABLE = 'Orders'; 
 
 const PAYSTACK_PUBLIC_KEY = 'pk_live_64e2c87f59931d03706f8f41e8dca0ffdea7faf7'; 
